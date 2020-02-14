@@ -14,19 +14,43 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="45dp"
         android:src="@drawable/icon_app" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FullName"
+                android:textColor="@color/textColor_Login_and_Signup" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_bottom_edittext"
+                android:hint="Nguyen Van A"
+                android:textColor="@color/black"
+                android:textColorHint="@color/borrowButtonLogin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:orientation="vertical">
 
             <TextView
@@ -40,9 +64,9 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/border_bottom_edittext"
-                android:hint="admin@example.com"
+                android:hint="nguyenvana@gmail.com"
                 android:textColor="@color/black"
-                android:textColorHint="@color/textColor_Login_and_Signup" />
+                android:textColorHint="@color/borrowButtonLogin" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,11 +94,36 @@
                 android:textColorHint="@color/borrowButtonLogin" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textColor="@color/textColor_Login_and_Signup" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_bottom_edittext"
+                android:hint="******"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColorHint="@color/borrowButtonLogin" />
+        </LinearLayout>
+
         <Button
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/radius_button_login"
             android:gravity="center"
             android:text="Login"
